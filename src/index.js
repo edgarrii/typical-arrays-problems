@@ -1,12 +1,35 @@
 
-exports.min = function min (array) {
-  return 0;
+exports.min = function min (arr) {
+  if (arr == []) {
+    return 0;
+  } 
+  let tempMin = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (tempMin > arr[i]) tempMin = arr[i];
+  }
+  return tempMin;
 }
 
-exports.max = function max (array) {
-  return 0;
+exports.max = function max (arr) {
+   if (arr == []) {
+    return 0;
+  } 
+  let tempMax = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > tempMax) tempMax = arr[i];
+  }
+  return tempMax;
 }
 
-exports.avg = function avg (array) {
-  return 0;
+exports.avg = function avg (arr) {
+   if (arr == []) {
+    return 0;
+  } 
+  let sum = 0;
+  let avg = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    avg = sum / arr.length;
+  }
+  return avg;
 }
