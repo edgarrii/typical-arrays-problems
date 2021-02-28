@@ -1,6 +1,6 @@
 
 exports.min = function min (arr) {
-  if (arr == []) {
+  if (arr == [] || arr == null) {
     return 0;
   } 
   let tempMin = arr[0];
@@ -11,7 +11,7 @@ exports.min = function min (arr) {
 }
 
 exports.max = function max (arr) {
-   if (arr == []) {
+   if (arr == [] || arr == null) {
     return 0;
   } 
   let tempMax = arr[0];
@@ -22,7 +22,7 @@ exports.max = function max (arr) {
 }
 
 exports.avg = function avg (arr) {
-   if (arr == []) {
+   if (arr == [] || arr == null) {
     return 0;
   } 
   let sum = 0;
